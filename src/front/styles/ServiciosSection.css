@@ -1,0 +1,49 @@
+.services-section {
+  background-color: #0A090C  ; /* Fondo amarillo pálido */
+  padding: 60px 0;
+}
+
+.services-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #F0EDEE; /* Color oscuro para el título */
+  margin-bottom: 30px;
+}
+
+.services-section p {
+  font-size: 16px;
+  color: #F0EDEE; /* Gris azulado para el texto de la descripción */
+  margin-bottom: 40px;
+}
+
+.service-card {
+  background-color: F0EDEE;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #0A090C; /* Fondo suave verde */
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  color: #14080E; /* Color oscuro para el texto */
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3:hover {
+  color: #e35149; /* Cambio de color en el hover */
+}

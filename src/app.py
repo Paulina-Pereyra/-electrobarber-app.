@@ -3,8 +3,8 @@ This module takes care of starting the API Server, Loading the DB and Adding the
 """
 import os
 from flask import Flask, request, jsonify, url_for, send_from_directory
-from flask_migrate import Migrate
-from flask_swagger import swagger
+from flask_migrate import Migrate # type: ignore
+from flask_swagger import swagger # type: ignore
 from api.utils import APIException, generate_sitemap
 from api.models import db
 from api.routes import api

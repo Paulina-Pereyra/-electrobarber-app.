@@ -1,0 +1,33 @@
+.nosotros-section {
+    background-color: #F0EDEE; /* Fondo oscuro */
+    color: #0A090C; /* Texto claro */
+    padding: 60px 0;
+}
+
+.nosotros-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600; /* Peso de la fuente */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    color: #0A090C;
+}
+
+.nosotros-section p {
+    font-size: 18px;
+    color: #0A090C; /* Color claro para el texto */
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 600; /* Peso de la fuente */
+    letter-spacing: 3px; /* Espaciado entre letras */
+}
+
+.nosotros-section p strong {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .nosotros-section p {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,79 @@
+/* Archivo: IngresoUsuario.css */
+.form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: none; /* Sin bordes */
+  border-radius: 10px;
+  background-color: #121212; /* Fondo negro */
+  text-align: center;
+  color: #ffffff; /* Texto blanco */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: #1e1e1e; /* Fondo gris oscuro */
+  border: 1px solid #333333; /* Borde tenue */
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.input-group input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent; /* Fondo transparente */
+  color: #ffffff; /* Texto blanco */
+  font-size: 14px;
+}
+
+button[type='submit'] {
+  background-color: #ff8a5b; /* Color de acento */
+  color: #ffffff; /* Texto blanco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type='submit']:hover {
+  background-color: #ea526f; /* Color más intenso al pasar el cursor */
+}
+
+.alternative-login button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #333333; /* Borde tenue */
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #444242 !important; /* Fondo oscuro forzado */
+  color: #ffffff !important; /* Texto blanco */
+  transition: background-color 0.3s;
+}
+
+.alternative-login button:hover {
+  background-color: #797878; /* Cambio a un gris más claro al pasar el cursor */
+}
+
+.google-btn {
+  color: #4285f4; /* Azul de Google para el texto o el ícono */
+}
+
+
+
+hr {
+  border: 0.5px solid #333333; /* Línea tenue */
+  margin: 20px 0;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 18px; /* Ajusta el tamaño si es necesario */
+  color: #fff; /* Cambiar a blanco u otro color según el diseño */
+}

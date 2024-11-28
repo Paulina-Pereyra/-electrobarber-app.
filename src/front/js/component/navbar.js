@@ -1,19 +1,39 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import logo from "../../img/logo.png";
+import "../../styles/navbar.css";
 
 export const Navbar = () => {
-	return (
-		<nav className="navbar navbar-light bg-light">
-			<div className="container">
-				<Link to="/">
-					<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-				</Link>
-				<div className="ml-auto">
-					<Link to="/demo">
-						<button className="btn btn-primary">Check the Context in action</button>
-					</Link>
-				</div>
-			</div>
-		</nav>
-	);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <nav className="navbar">
+      {/* Logo a la izquierda */}
+      <div className="navbar-logo">
+        <a href="#home">
+          <img src={logo} alt="Logo" />
+        </a>
+      </div>
+
+      {/* Título centrado */}
+      <div className="navbar-title">ELECTROBARBER</div>
+
+      {/* Menú hamburguesa */}
+      <div
+        className="navbar-burger"
+        onClick={() => setMenuOpen((prevState) => !prevState)}
+      >
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      {/* Enlaces a la derecha */}
+      <div className={`navbar-links ${menuOpen ? "active" : ""}`}>
+        <a href="#home" onClick={() => setMenuOpen(false)}>Inicio</a>
+        <a href="#services" onClick={() => setMenuOpen(false)}>Servicio</a>
+        <a href="#nosotros" onClick={() => setMenuOpen(false)}>Nosotros</a>
+        <a href="#contacto" onClick={() => setMenuOpen(false)}>Contacto</a>
+      </div>
+    </nav>
+  );
 };

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilo para el navbar */
+.navbar {
+  background-color: #fff;
+  padding: 10px 20px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+/* Contenedor del logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  width: 50px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Título centrado */
+.navbar-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #040926;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Navegación */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Links */
+.navbar-links a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #040926;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar-links a:hover {
+  color: #e35149;
+}
+
+/* Menú hamburguesa */
+.navbar-burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.navbar-burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #040926;
+  transition: all 0.3s;
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar-title {
+    font-size: 1.5rem;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-burger {
+    display: flex;
+  }
+}

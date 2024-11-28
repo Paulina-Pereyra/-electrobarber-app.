@@ -1,0 +1,65 @@
+.contacto-section {
+    background-color: #0A090C; /* Fondo oscuro */
+    color: #F0EDEE; /* Texto claro */
+    padding: 60px 0;
+}
+
+.contacto-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600; /* Peso de la fuente */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    color: #F0EDEE;
+}
+
+.contacto-section p {
+    font-size: 18px;
+    color: #F0EDEE; /* Color claro para el texto */
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-weight: 600; /* Peso de la fuente */
+    letter-spacing: 3px; /* Espaciado entre letras */
+}
+
+.contacto-section form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contacto-section form .form-group {
+    margin-bottom: 20px;
+}
+
+.contacto-section form input,
+.contacto-section form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F0EDEE;
+    color: #040926;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contacto-section form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contacto-section form button {
+    background-color: #20c997; /* Botón verde azulado */
+    color: #F0EDEE;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-section form button:hover {
+    background-color: #17a589; /* Tonalidad más oscura */
+}
