@@ -19,7 +19,6 @@ export const HomeSection = () => {
           <h1 className="text-heading">Sino que también nos ocupamos de la</h1>
           <h2 className="text-subheading">CALIDAD DE ATENCIÓN</h2>
         </div>
-
         {/* Carrusel */}
         <div id="photoCarousel" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">

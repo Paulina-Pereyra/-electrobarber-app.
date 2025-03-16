@@ -1,0 +1,129 @@
+.pago-section {
+    background: #fafafa;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pago-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pago-header h1 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pago-header p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.pago-resumen {
+    margin-bottom: 30px;
+}
+
+.pago-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pago-item-img img {
+    max-width: 100px;
+    border-radius: 10px;
+}
+
+.pago-item-info h3 {
+    font-size: 1.6rem;
+    color: #444;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.pago-item-info p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.pago-total {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.pago-total h3 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.pago-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pago-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.pago-form input:focus {
+    outline: none;
+    border-color: #4caf50;
+}
+
+.btn-pagar {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn-pagar:hover {
+    background-color: #388e3c;
+}
+
+.btn-regresar {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-back {
+    background-color: #ff5252;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn-back:hover {
+    background-color: #e53935;
+}

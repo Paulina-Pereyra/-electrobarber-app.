@@ -3,6 +3,8 @@ import { HomeSection } from './HomeSection.jsx';  // Asegúrate de que importes 
 import { ServiciosSection } from './ServiciosSection.jsx';
 import { NosotrosSection } from './NosotrosSection.jsx';
 import { ContactoSection } from './ContactoSection.jsx';
+import Productos from './ProductosSection.jsx';
+import PagoSection from './PagoSection.jsx'
 
 
 const Home = () => {
@@ -10,8 +12,10 @@ const Home = () => {
         <div>
             <HomeSection />
             <ServiciosSection />
-            <NosotrosSection/>
-            <ContactoSection/>
+            <NosotrosSection />
+            <ContactoSection />
+            <Productos />
+            <PagoSection />
         </div>
     );
 };

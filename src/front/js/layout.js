@@ -19,10 +19,15 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { ServiciosSection } from "./pages/ServiciosSection";
 import { HomeSection } from "./pages/HomeSection";
-import {AgendarCita} from "./component/AgendarCita";
+import { AgendarCita } from "./component/AgendarCita";
 // import {IngresoUsuario} from "./component/IngresoUsuario";
 import { NosotrosSection } from "./pages/NosotrosSection";
-import {Contacto} from "./pages/ContactoSection";
+import { Contacto } from "./pages/ContactoSection";
+import { Productos } from "./pages/ProductosSection.jsx"
+import { CarritoSection } from "./pages/CarritoSection.jsx"
+import { PagoSection } from "./pages/PagoSection.jsx"
+
+
 
 
 //create your first component
@@ -31,15 +36,15 @@ const Layout = () => {
     // you can set the basename on the .env file located at the root of this project, E.g: BASENAME=/react-hello-webapp/
     const basename = process.env.BASENAME || "";
 
-    if(!process.env.BACKEND_URL || process.env.BACKEND_URL == "") return <BackendURL/ >;
+    if (!process.env.BACKEND_URL || process.env.BACKEND_URL == "") return <BackendURL />;
 
     return (
         <div>
             <BrowserRouter basename={basename}>
                 <ScrollToTop>
-                  
+
                     <Routes>
-            
+
                         <Route element={<Home />} path="/" />
                         <Route element={<Navbar />} path="/navbar" />
                         <Route element={<HomeSection />} path="/home-section" />
@@ -48,6 +53,10 @@ const Layout = () => {
                         {/* <Route element={<IngresoUsuario />} path="/ingreso-usuario" /> */}
                         <Route element={<NosotrosSection />} path="/nosotros-section" />
                         <Route element={<Contacto />} path="/contacto-section" />
+                        <Route element={<Productos />} path="/productos-section" />
+                        <Route element={<CarritoSection />} path="/carrito-section" />
+                        <Route element={<PagoSection />} path="/pago-section" />
+
                         <Route element={<Demo />} path="/demo" />
                         <Route element={<Single />} path="/single/:theid" />
                         <Route element={<h1>Not found!</h1>} path="*" />

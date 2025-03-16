@@ -1,29 +1,33 @@
 .services-section {
-  background-color: #0A090C  ; /* Fondo amarillo pálido */
+  background-color: #0A090C; /* Fondo oscuro */
   padding: 60px 0;
 }
 
 .services-section h2 {
   font-size: 36px;
   font-weight: bold;
-  color: #F0EDEE; /* Color oscuro para el título */
+  color: #F0EDEE; /* Texto claro */
   margin-bottom: 30px;
 }
 
 .services-section p {
   font-size: 16px;
-  color: #F0EDEE; /* Gris azulado para el texto de la descripción */
+  color: #F0EDEE; /* Texto claro */
   margin-bottom: 40px;
 }
 
 .service-card {
-  background-color: F0EDEE;
+  background-color: #0A090C; /* Fondo claro */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #0A090C; /* Fondo suave verde */
+}
+
+.service-card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .service-card img {
@@ -34,16 +38,63 @@
 
 .service-card h3 {
   font-size: 18px;
-  color: #14080E; /* Color oscuro para el texto */
+  color: #333; /* Texto oscuro */
   font-weight: 500;
   margin-top: 20px;
 }
 
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+.service-card h3:hover {
+  color: #e35149; /* Color de texto en hover */
 }
 
-.service-card h3:hover {
-  color: #e35149; /* Cambio de color en el hover */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+.modal-container {
+  background: #9e2725; /* Fondo del modal */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 3rem; /* Tamaño ajustado */
+  cursor: pointer;
+  color: #F0EDEE; /* Texto claro */
+}
+
+.modal-title {
+  font-size: 2.5rem; /* Tamaño del título */
+  margin-bottom: 1rem;
+  color: #000000; /* Texto claro */
+}
+
+.modal-price {
+  font-size: 3rem; /* Tamaño del precio */
+  color: #000000; /* Texto claro */
+  margin-bottom: 1rem;
+}
+
+.modal-details {
+  font-size: 1.2rem; /* Tamaño del texto */
+  color: #000000; /* Texto claro */
+  line-height: 1.6;
 }

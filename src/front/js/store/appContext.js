@@ -1,33 +1,37 @@
-import React, { useState, useEffect } from "react";
+import React, { createContext, useState, useEffect } from "react";
 import getState from "./flux";
 
-// Crea el contexto
-export const Context = React.createContext(null);
+export const Context = createContext();
 
-// StoreWrapper envuelve el componente y gestiona el estado global
-const StoreWrapper = (props) => {
-    const [state, setState] = useState(getState({
-        getStore: () => state.store,
-        getActions: () => state.actions,
-        setStore: (updatedStore) =>
-            setState({
-                store: { ...state.store, ...updatedStore },
-                actions: { ...state.actions }
-            })
-    }));
+const StoreWrapper = ({ children }) => {
+    const [store, setStore] = useState({
+        cart: [] // Inicializa el carrito vacío
+    });
+
+    const actions = getState({ 
+        getStore: () => store, 
+        setStore: (updatedStore) => setStore({
+            ...store, 
+            ...updatedStore 
+        })
+    }).actions;
 
     useEffect(() => {
-        // Guarda en localStorage cada vez que el estado cambie
-        localStorage.setItem('isAuthenticated', JSON.stringify(state.store.isAuthenticated));
-        localStorage.setItem('user', JSON.stringify(state.store.user));
-    }, [state.store]);
+        // Cargar carrito desde localStorage al inicio
+        const savedCart = localStorage.getItem("cart");
+        if (savedCart) {
+            setStore((prevStore) => ({
+                ...prevStore,
+                cart: JSON.parse(savedCart)
+            }));
+        }
+    }, []);
 
     return (
-        <Context.Provider value={state}>
-            {props.children} {/* Usa children para permitir pasar cualquier componente */}
+        <Context.Provider value={{ store, actions }}>
+            {children}
         </Context.Provider>
     );
 };
 
 export default StoreWrapper;
-
